@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#000000"
+    android:orientation="vertical">
+	<TextView
+        android:id="@+id/item_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dip"
+        android:text="出差人员动态"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+	<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#eaeaea"/>
+	
+	<TextView
+        android:id="@+id/item_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>

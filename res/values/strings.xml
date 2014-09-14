@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Riding</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+	<string name="finished">Finished</string>
+    <string name= "fix_biclye">骑行</string>
+    <string name= "fix_rest">休息</string>
+    <string name= "fix_fastspeed">最高速度</string>
+    <string name= "fix_commanspeed">最高速度</string>
+    <string name= "fix_calories">卡路里</string>
+    <string name= "fix_altitude">海拔</string>
+    <string name= "fix_alllength">总里程</string>
+    <string name= "fix_km">Km</string>
+    <string name= "fix_speparator">-</string>
+	<string name="startbicyle">开始骑行</string>
+	<string name="riding_time">00:00:00-00:00:00</string>
+</resources>

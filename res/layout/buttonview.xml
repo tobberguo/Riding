@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttombar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="250dip"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0dip"
+    android:background="@drawable/start_float_bg" >
+
+    <Button
+        android:id="@+id/btn_pos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/position_icon" />
+
+    <Button
+        android:id="@+id/btn_share2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/share_icon" />
+
+    <Button
+        android:id="@+id/btn_finished"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/finished"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/view_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginBottom="70dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="160dip"
+        android:shrinkColumns="4"
+        android:stretchColumns="4" >
+
+        <TableRow android:layout_width="fill_parent" >
+
+            <TextView
+                android:id="@+id/label_bic"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_biclye"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/label_rest"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_rest"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/label_fastspeed"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_fastspeed"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/label_commonspeed"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_commanspeed"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/text_bic"
+                android:layout_marginTop="4dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_biclye"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_rest"
+                android:layout_marginTop="4dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_rest"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_fastspeed"
+                android:layout_marginTop="4dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_fastspeed"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_commonspeed"
+                android:layout_marginTop="4dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_commanspeed"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/label_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="83dp"
+        android:text="@string/fix_calories" />
+
+    <TextView
+        android:id="@+id/text_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/label_calories"
+        android:layout_below="@+id/label_calories"
+        android:text="@string/fix_calories"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/label_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_calories"
+        android:layout_toLeftOf="@+id/btn_share2"
+        android:text="@string/fix_altitude" />
+
+    <TextView
+        android:id="@+id/text_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_calories"
+        android:layout_alignBottom="@+id/text_calories"
+        android:layout_alignLeft="@+id/label_altitude"
+        android:text="@string/fix_altitude"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/rindingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dip"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/riding_time"
+        android:textSize="12sp"
+        android:textColor="#000000" />
+
+    <FrameLayout
+        android:id="@+id/layout_frame"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dip"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_length"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/label_alllength"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_alllength" />
+
+            <TextView
+                android:id="@+id/text_alllength"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/fix_alllength"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/label_km"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fix_km" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_startbicyle"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/startbicyle"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/left_bidir_sliding_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F3F1"
+     >
+
+    <RelativeLayout 
+	    android:id="@+id/topRelative"
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dip"
+	    android:gravity="center_vertical"
+	    android:padding="0.0px"
+	    >
+	    <ImageView
+	        android:id="@+id/rlCommTitleBg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentTop="true"
+	        android:background="#ffffff"
+	         />
+	    <TextView
+	        android:id="@+id/tobTitleView"
+	        android:textColor="#000000"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="96.0dip"
+	        android:paddingRight="96.0dip"
+	        android:text="用户登入"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        
+	        />
+	    <Button
+	        android:id="@+id/titleBtRight"
+	        android:text="跳过"
+	        android:textSize="14sp"
+	        android:textColor="#00B386"
+	        android:minWidth="45dip"
+	        android:minHeight="44dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dip"
+	        android:layout_centerVertical="true"
+	        android:includeFontPadding="false"
+	        android:background="#ffffff"
+	        />
+	</RelativeLayout>
+		
+   	<RelativeLayout
+   	    android:id="@+id/inputInfoRelative"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="81dip"
+   	    android:layout_below="@+id/topRelative"
+   	    android:layout_marginTop="30dip"
+   	    android:background="#ffffff" >
+
+	    <RelativeLayout 
+		    android:id="@+id/inputEmailRelative"
+		    android:layout_alignParentTop="true"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dip">
+		    
+		    <TextView
+		        android:id="@+id/emailView"
+		        android:textColor="#000000"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:text="邮箱"
+		        android:layout_marginLeft="15dip"
+		        android:gravity="center_vertical"
+		        android:textSize="12sp"/>
+		    
+		    <EditText
+		        android:id="@+id/userName"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:hint="请输入邮箱地址"
+		        android:textSize="12sp"
+		        android:textColor="#000000"
+		        android:layout_toRightOf="@+id/emailView"
+		        android:layout_marginLeft="15dip"
+		        android:background="@null"
+		        android:gravity="center_vertical"/>
+		</RelativeLayout>
+		
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_below="@+id/inputEmailRelative"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:layout_marginLeft="15dip"
+	        android:background="#F3F3F1" />
+	    
+	    <RelativeLayout 
+		    android:id="@+id/inputPwdRelative"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dip"
+		    android:layout_below="@+id/imageView1"
+		    android:padding="0.0px">
+		    
+		    <TextView
+		        android:id="@+id/pwdView"
+		        android:textColor="#000000"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:text="密码"
+		        android:layout_marginLeft="15dip"
+		        android:gravity="center_vertical"
+		        android:textSize="12sp"/>
+		    
+		    <EditText
+		        android:id="@+id/pwdEdit"
+		        android:textColor="#000000"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:hint="请输入密码"
+		        android:password="true"
+		        android:textSize="12sp"
+		        android:layout_toRightOf="@+id/pwdView"
+		        android:layout_marginLeft="15dip"
+		        android:background="@null"
+		        android:gravity="center_vertical"/>
+		</RelativeLayout>
+	</RelativeLayout>
+	
+   	<RelativeLayout 
+		    android:id="@+id/LoginBtnRelative"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dip"
+		    android:background="#ffffff"
+		    android:layout_marginTop="25dip"
+		    android:layout_below="@+id/inputInfoRelative"
+		    android:padding="0.0px">
+		<Button
+			android:id="@+id/loginBtn"
+			android:textColor="#00B386"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="登入"
+			android:layout_marginLeft="15dip"
+			android:gravity="center_vertical"
+			android:background="#ffffff"
+			android:textSize="12sp"/>
+   </RelativeLayout>
+   
+   <RelativeLayout 
+		    android:id="@+id/registerRelative"
+		    android:layout_width="fill_parent"
+		    android:layout_height="81dip"
+		    android:background="#ffffff"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="25dip"
+		    android:padding="0.0px">
+		
+       <Button
+			android:id="@+id/registerBtn"
+			android:textColor="#00B386"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip"
+			android:text="新用户注册"
+			android:layout_marginLeft="15dip"
+			android:gravity="center_vertical"
+			android:background="#ffffff"
+			android:textSize="12sp"/>
+       
+       <ImageView
+	        android:id="@+id/imageView2"
+	        android:layout_below="@+id/registerBtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:layout_marginLeft="15dip"
+	        android:background="#F3F3F1" />
+       
+       <Button
+			android:id="@+id/retrieveBtn"
+			android:textColor="#00B386"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip"
+			android:text="找回密码"
+			android:layout_marginLeft="15dip"
+			android:layout_below="@+id/imageView2"
+			android:gravity="center_vertical"
+			android:background="#ffffff"
+			android:textSize="12sp"/>
+	</RelativeLayout>
+	
+</RelativeLayout>
